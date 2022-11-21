@@ -19,4 +19,4 @@ sudo touch /var/www/html/index.php
 sed -i "s/<?php phpInfo(); ?>" /var/www/html/index.php
 sudo systemctl restart apache2
 ips=$(hostname -I)
-echo "Go to localhost or $ips";
+echo "Go to localhost or $ips"
