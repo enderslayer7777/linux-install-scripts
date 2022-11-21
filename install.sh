@@ -1,7 +1,7 @@
 echo "LAMP Stack Installation Script"
 sudo apt install apache2 -y
 sudo apt install php8.1 -y
-sudo apt libapache2php -y
+sudo apt install libapache2php -y
 sudo apt install curl -y
 sudo apt install php-curl -y
 sudo ufw allow "Apache Full"
