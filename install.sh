@@ -15,8 +15,8 @@ sudo mysql -u root -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\\_%';"
 sudo mysql -u root -e "FLUSH PRIVILEGES;"
 sudo apt install php libapache2-mod-php php-mysql -y
 sudo systemctl restart apache2
-touch /var/www/html/index.php
-sed -i "<?php phpInfo(); ?>"
+sudo touch /var/www/html/index.php
+sed -i "<?php phpInfo(); ?>" /var/www/html/index.php
 sudo systemctl restart apache2
 ips=$(hostname -I)
 echo "Go to localhost or $ips";
